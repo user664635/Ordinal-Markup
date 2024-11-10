@@ -268,7 +268,7 @@ function loadGame(loadgame) {
     game = JSON.parse(tempgame)
   }
   const diff = Date.now() - game.lastTick + 10000000;
-  Console.log(diff);
+  // Console.log(diff);
   handleOldVersions(loadgame);
   game.cardinals = ENify(game.cardinals);
   game.incrementy = ENify(game.incrementy);
