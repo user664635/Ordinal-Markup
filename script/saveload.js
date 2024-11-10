@@ -267,7 +267,7 @@ function loadGame(loadgame) {
     $.notify("Import Failed, attemped to import public testing version into the main game","error")
     game = JSON.parse(tempgame)
   }
-  const diff = Date.now() - game.lastTick;
+  const diff = Date.now() - game.lastTick + 10000000;
   Console.log(diff);
   handleOldVersions(loadgame);
   game.cardinals = ENify(game.cardinals);
